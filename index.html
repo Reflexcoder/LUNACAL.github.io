@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side empty -->
+        <div class="empty-left"></div>
+
+        <!-- Right side widgets -->
+        <div class="widgets-container">
+            <!-- Tabbed Widget -->
+            <div class="tab-widget">
+                <!-- Tabs Container with Black Background -->
+                <div class="tabs-container">
+                    <button class="tab-btn active" onclick="openTab(event, 'about')">About Me</button>
+                    <button class="tab-btn" onclick="openTab(event, 'experiences')">Experiences</button>
+                    <button class="tab-btn" onclick="openTab(event, 'recommended')">Recommended</button>
+                </div>
+                <div id="about" class="tab-content active">
+                    <p>Hello! I'm Dave, your sales rep here from Salesforce. I've been working at this awesome company for 3 years now.</p>
+                    <p>I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters - Emma and Ella...</p>
+                </div>
+                <div id="experiences" class="tab-content">
+                    <p>Experience content goes here...</p>
+                </div>
+                <div id="recommended" class="tab-content">
+                    <p>Recommended content goes here...</p>
+                </div>
+            </div>
+
+            <!-- Gallery Widget -->
+            <div class="gallery-widget">
+                <div class="gallery-header">
+                    <button class="gallery-title">Gallery</button>
+                    <button class="add-image-btn">+ Add Image</button>
+                </div>
+                <div class="gallery-images">
+                    <img src="/images/img1.jpeg" alt="Image 1">
+                    <img src="/images/img2.jpeg" alt="Image 2">
+                    <img src="/images/img3.jpeg" alt="Image 3">
+                </div>
+                <div class="gallery-nav">
+                    <button class="nav-btn">←</button>
+                    <button class="nav-btn">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
